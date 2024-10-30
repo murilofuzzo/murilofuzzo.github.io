@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /* Fundo da página com gradiente suave */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #e0f7fa, #80deea, #26c6da);
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        /* Estilo do título */
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #004d40;
+        }
+
+        /* Container dos botões */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Estilo dos botões */
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Estilo específico para o botão do Instagram */
+        .button.instagram {
+            background: linear-gradient(135deg, #e4405f, #b23442);
+        }
+
+        /* Efeito de brilho no hover dos botões */
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transition: opacity 0.6s ease, transform 0.6s ease;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.1);
+        }
+
+        .button:hover::before {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* Animação no hover dos botões */
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        <div class="button-container">
+            <a href="https://wa.me/5544999960567" class="button">Fale no WhatsApp</a>
+            <a href="https://instagram.com/omurilofuzzo" class="button instagram">Visite o Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
